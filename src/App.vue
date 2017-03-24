@@ -10,6 +10,7 @@
       <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
     </ul>
     <h2>Ecosystem</h2>
+    <p>{{ sponser }}</p>
     <ul>
       <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
@@ -20,10 +21,12 @@
 </template>
 
 <script>
+import { sponser } from './service/airtable.js'
 export default {
   name: 'app',
   data () {
     return {
+      sponser: sponser,
       msg: 'Welcome to Your Vue.js App'
     }
   }
