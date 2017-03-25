@@ -1,8 +1,8 @@
 <template>
   <section id="app">
 
-    <img src="./assets/logo.png">
-
+<!--     <img src="./assets/logo.png"> -->
+    <hero></hero>
     <sponser></sponser>
 
     <mycomponent></mycomponent>
@@ -13,6 +13,7 @@
 <script>
 import MyComponent from './components/myComponent.vue'
 import Sponser from './components/sponser.vue'
+import Hero from './components/hero.vue'
 export default {
   name: 'app',
   data () {
@@ -23,18 +24,23 @@ export default {
   components: {
     mycomponent: MyComponent,
     sponser: Sponser,
+    hero: Hero,
   },
 }
 </script>
 
 <style lang="scss">
+* {
+  padding: 0;
+  margin: 0;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 h1, h2 {
