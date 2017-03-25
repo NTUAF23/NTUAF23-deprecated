@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "airtable": "^0.4.5",
+    "lodash": "^4.17.4",
     "vue": "^2.2.1"
   },
   "devDependencies": {
